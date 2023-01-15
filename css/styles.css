@@ -50,6 +50,11 @@ body {
     
 }
 
+.customers-container {
+    padding-right: 16px;
+    padding-left: 16px;
+}
+
 .header-container {
     display: flex;
     align-items: center;
@@ -86,6 +91,12 @@ body {
         margin-right: auto;
         
     }
+
+    .customers-container {
+        width: 428px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 /* ================================= TABLET - MIN ========================================= */
@@ -95,11 +106,16 @@ body {
         padding-top: 0;
         padding-bottom: 0;
     }
+
+    
+
     .container {
         width: 768px;
         margin: 0 auto;
                 
     }
+
+    
 
     .mobile-menu-open {
         display: none;
@@ -179,6 +195,16 @@ body {
         } 
 }
 
+@media screen and (min-width: 768px) and (max-width: 1200px){
+
+    .customers-container {
+        width: 552px;
+        margin: auto;
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+}
+
 /* CONTACTS */
 
 .contacts {
@@ -188,15 +214,13 @@ body {
     
 }
 
-.contact-li:not(:last-child) {
-margin-right: 40px;
-}
+
 
 .list-contacts {
     color: var(--text);
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.04em;
     text-decoration: none;
 
     
@@ -215,14 +239,26 @@ margin-right: 40px;
         width: 1158px;
     }
 
+    .customers-container {
+        width: 1158px;
+    }
+
     .contacts {
         display: flex;
     }
 
     .list-contacts {
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        
         padding-top: 24px;
         padding-bottom: 24px;
     }
+
+    .contact-li:not(:last-child) {
+        margin-right: 40px;
+        }
 
     .hero {
         padding-top: 188px;
@@ -567,6 +603,12 @@ margin-right: 40px;
         padding-top: 188px;
         padding-bottom: 188px;
     }
+
+    .overlay {
+        max-width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 /* ================================= ADVANTEGES ======================== */
@@ -658,10 +700,7 @@ margin-right: 40px;
         flex-basis: calc((100% - 3 * 24px) / 4);
         
     }
- .list-pluses-li:not(:last-child) {
-            margin-right: 24px;
-            margin-bottom: 0;
-    }
+ 
 .container-advanteges-icon {
 display: flex;
 justify-content: center;
@@ -1291,7 +1330,12 @@ margin-bottom: 8px;
         display: flex;
         flex-wrap: wrap;
         align-items: baseline;
+        width: 552px;
        
+    }
+
+    .logo-bottom {
+        display: inline-block;
     }
 
     .footer-container-logo-reason {
